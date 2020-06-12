@@ -18,7 +18,7 @@ _acs_auto() {
     case "${PREVIOUS}" in
         --option_1) COMPREPLY=($(compgen -W "${OPTION_1}" -- ${CURRENT})) ;;
         --option_2) COMPREPLY=($(compgen -W "${OPTION_2}" -- ${CURRENT})) ;;
-        *)         COMPREPLY=() ;;
+                 *) COMPREPLY=() ;;
     esac
 }
 
